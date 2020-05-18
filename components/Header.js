@@ -1,7 +1,6 @@
 import Link from "next/link"
 const Header = () => (
   <div>
-    <br />
     <h1 className="title is-2 ">TheethawatSpace*</h1>
     <hr />
     <p>
