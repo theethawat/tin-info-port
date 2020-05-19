@@ -77,7 +77,6 @@ const Footer = () => (
         Create with <FontAwesomeIcon icon={faHeart} /> using{" "}
         <a href="https://nextjs.org">NextJS</a> which get useful function of{" "}
         <a href="https://reactjs.org"> React</a> Proundly hosted on{" "}
-        <FontAwesomeIcon icon={faGithub} />{" "}
         <a href="https://vercel.com/">Vercel</a>
       </p>
     </footer>
