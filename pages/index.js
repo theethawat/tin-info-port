@@ -21,10 +21,36 @@ function Home({ data }) {
               url="https://cloud.theduckcreator.in.th/media/Tin%20Present.mp4"
             />
           </div>
-          <div className="content">
-            <h3 className="title is-3">About Me</h3>
-            <p className="">{data.introduction}</p>
-            <p className="kanitlight ">{data.thaiIntro}</p>
+          <br />
+          <div className="content is-medium">
+            <h4 className="subtitle is-4">
+              TheethawatSpace{" "}
+              <i className="kanitlight has-text-info">/ธีร์ธวัช-สเปซ/</i>
+            </h4>
+            <p>
+              {" "}
+              <i className="has-text-danger">(n)</i> Space of{" "}
+              <b>Theethawat Savastham</b>; A Thai Software Creater and
+              Developer, Founder of my own space{" "}
+              <a href="https://www.theduckcreator.in.th" target="_blank">
+                The Duck Creator
+              </a>
+              <br />
+              and Computer Engineering Student at Prince of Songkla University{" "}
+              <br />
+              <br />
+              <span className="kanitlight">
+                {" "}
+                <i className="has-text-danger">
+                  (นาม.)
+                </i> พื้นที่สร้างสรรค์ของ <b>ธีร์ธวัช สวาสดิ์ธรรม</b> นักคิด
+                นักพัฒนาโปรแกรมชาวไทยคนหนึ่ง ผู้ก่อตั้งพื้นที่ของเขาเองใน{" "}
+                <a href="https://www.theduckcreator.in.th" target="_blank">
+                  เดอะดักส์ครีเอเตอร์
+                </a>{" "}
+                และ นักศึกษาวิศวกรรมคอมพิวเตอร์ มหาวิทยาลัยสงขลานครินทร์{" "}
+              </span>
+            </p>
           </div>
         </div>
       </section>

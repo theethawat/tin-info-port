@@ -1,13 +1,14 @@
 import Router from "next/router"
 import Header from "../components/Header"
 import Footer from "../components/Footer"
+
 function About({ data }) {
   return (
     <div>
       <section className="section">
         <div className="container">
           <Header />
-          <h3 className="title is-4">Personal Info and Biography</h3>
+          <h3 className="title is-3">Personal Info and Biography</h3>
           <div className="columns">
             <div className="column is-3">
               <img
@@ -31,9 +32,18 @@ function About({ data }) {
                       <li> {data.school[1]}</li>
                     </ul>
                   </li>
+                  <li>
+                    Email -{" "}
+                    <a href={"mailto:" + data.email.work}>{data.email.work}</a>{" "}
+                  </li>
                 </ul>
               </div>
             </div>
+          </div>
+          <div className="content">
+            <h3 className="title is-3">About Me</h3>
+            <p className="">{data.introduction}</p>
+            <p className="kanitlight ">{data.thaiIntro}</p>
           </div>
         </div>
       </section>
@@ -46,6 +56,7 @@ export async function getStaticProps() {
     "http://cloud.theduckcreator.in.th/api/personal/personal-data/"
   )
   const data = await res.json()
+
   return {
     props: {
       data,
