@@ -7,6 +7,10 @@ const Header = () => (
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       <meta http-equiv="Content–Type" content="text/html ; charset= utf–8" />
       <meta
+        name="og:image"
+        content="https://theethawat.theduckcreator.in.th/Me.jpg"
+      />
+      <meta
         name="description"
         content="TheethawatSpace is a Development Space of Theethawat Savastham, Theethawat's Development Portfolio Go Here!"
       />
@@ -22,9 +26,6 @@ const Header = () => (
       <ul>
         <li>
           <Link href="/">Home</Link>
-        </li>
-        <li>
-          <Link href="/about">Biography</Link>
         </li>
         <li>
           <Link href="/skill">Skill & Certificate</Link>
