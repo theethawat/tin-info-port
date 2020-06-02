@@ -68,7 +68,7 @@ function Home({ data }) {
 
 export async function getStaticProps() {
   const res = await fetch(
-    "http://cloud.theduckcreator.in.th/api/personal/personal-data/"
+    "https://tdc-tin-personal.azurewebsites.net//personal-data/"
   )
   const data = await res.json()
 

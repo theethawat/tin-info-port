@@ -72,7 +72,7 @@ function project({ projectData }) {
 
 export async function getStaticProps() {
   const project = await fetch(
-    "http://cloud.theduckcreator.in.th/api/personal/project/"
+    "https://tdc-tin-personal.azurewebsites.net//project/"
   )
   const projectData = await project.json()
 
