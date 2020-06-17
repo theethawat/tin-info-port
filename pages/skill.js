@@ -4,9 +4,10 @@ import Footer from "../components/Footer"
 function Skill({ data }) {
   return (
     <div>
+      <Header />
+
       <section className="section">
         <div className="container">
-          <Header />
           <h3 className="title is-3">Skill</h3>
           <div className="content column is-7">
             <ul>

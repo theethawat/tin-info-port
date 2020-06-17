@@ -12,7 +12,7 @@ import {
 function Footer({ data }) {
   return (
     <div>
-      <footer className="footer acenter">
+      <footer className="footer acenter kanitlight">
         <h4 className="title is-4">
           <a
             href="https://facebook.com/tin.savastham"

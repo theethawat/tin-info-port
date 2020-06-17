@@ -58,9 +58,10 @@ function project({ projectData }) {
   }
   return (
     <div>
+      <Header />
+
       <section className="section">
         <div className="container">
-          <Header />
           <h3 className="title is-3">Project</h3>
           {allProjectList}
         </div>

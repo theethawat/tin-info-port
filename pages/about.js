@@ -5,9 +5,9 @@ import Footer from "../components/Footer"
 function About({ data }) {
   return (
     <div>
+      <Header />
       <section className="section">
         <div className="container">
-          <Header />
           <h3 className="title is-3">Personal Info and Biography</h3>
           <div className="columns">
             <div className="column is-3">

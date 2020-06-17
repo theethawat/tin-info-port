@@ -21,22 +21,47 @@ const Header = () => (
       />
     </Head>
 
-    <h1 className="title is-2 kanitlight">TheethawatSpace* - ธีร์ธวัชสเปซ</h1>
+    <nav
+      className="navbar is-dark"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      <div className="navbar-brand">
+        <a className="navbar-item" href="/">
+          <h1 className="kanitlight title is-4 has-text-white">
+            TheethawatSpace*
+          </h1>
+        </a>
 
-    <nav className="breadcrumb kanitlight" aria-label="breadcrumbs">
-      <ul>
-        <li>
-          <Link href="/">Home</Link>
-        </li>
-        <li>
-          <Link href="/skill">Skill & Certificate</Link>
-        </li>
-        <li>
-          <Link href="/project">Project</Link>
-        </li>
-      </ul>
+        <a
+          role="button"
+          className="navbar-burger burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasicExample"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarBasicExample" className="navbar-menu">
+        <div className="navbar-start">
+          <a href="/" className="navbar-item">
+            Home
+          </a>
+
+          <a href="/skill" className="navbar-item">
+            Skill & Cert
+          </a>
+
+          <a href="/project" className="navbar-item">
+            Project
+          </a>
+        </div>
+      </div>
     </nav>
-    <hr />
   </div>
 )
 
