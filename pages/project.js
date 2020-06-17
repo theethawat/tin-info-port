@@ -72,7 +72,7 @@ function project({ projectData }) {
 
 export async function getStaticProps() {
   const project = await fetch(
-    "https://tdc-tin-personal.azurewebsites.net//project/"
+    "https://theethawat-api.azurewebsites.net/project/"
   )
   const projectData = await project.json()
 

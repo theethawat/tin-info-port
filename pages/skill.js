@@ -39,7 +39,7 @@ function Skill({ data }) {
 }
 
 export async function getStaticProps() {
-  const res = await fetch("https://tdc-tin-personal.azurewebsites.net//skill/")
+  const res = await fetch("https://theethawat-api.azurewebsites.net/skill/")
   const data = await res.json()
   return {
     props: {

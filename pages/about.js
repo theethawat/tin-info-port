@@ -53,7 +53,7 @@ function About({ data }) {
 }
 export async function getStaticProps() {
   const res = await fetch(
-    "https://tdc-tin-personal.azurewebsites.net//personal-data/"
+    "https://theethawat-api.azurewebsites.net/personal-data/"
   )
   const data = await res.json()
 

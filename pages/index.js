@@ -13,12 +13,13 @@ function Home({ data }) {
           <Header />
           <div className="video-player">
             <Plyr
-              type="video"
+              type="youtube"
               resetOnEnd={true}
               autoplay={true}
               muted={true}
               title="Theethawat Photo"
-              url="https://cloud.theduckcreator.in.th/media/Tin%20Present.mp4"
+              controls={true}
+              videoId="https://youtu.be/UzKTadfPrkQ"
             />
           </div>
           <br />
@@ -68,7 +69,7 @@ function Home({ data }) {
 
 export async function getStaticProps() {
   const res = await fetch(
-    "https://tdc-tin-personal.azurewebsites.net//personal-data/"
+    "https://theethawat-api.azurewebsites.net/personal-data/"
   )
   const data = await res.json()
 

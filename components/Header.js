@@ -20,7 +20,8 @@ const Header = () => (
         content="Theethawat Savastham,ธีร์ธวัช สวาสดิ์ธรรม"
       />
     </Head>
-    <h1 className="title is-2 ">TheethawatSpace*</h1>
+
+    <h1 className="title is-2 kanitlight">TheethawatSpace* - ธีร์ธวัชสเปซ</h1>
 
     <nav className="breadcrumb kanitlight" aria-label="breadcrumbs">
       <ul>
