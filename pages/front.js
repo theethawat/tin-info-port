@@ -1,6 +1,6 @@
 import Plyr from 'react-plyr'
 
-function Home({ data }) {
+function Front(data) {
   return (
     <div>
       <div className="title-hero hero is-medium">
@@ -62,19 +62,25 @@ function Home({ data }) {
                   <li>
                     schools :
                     <ul className="has-text-light">
-                      {data.school.map((_school) => (
-                        <li>{_school}</li>
-                      ))}
+                      {Array.isArray(data.school) &&
+                        data.school.map((_school) => <li>{_school}</li>)}
                     </ul>
                   </li>
                   <li>
                     email :{' '}
-                    <a
-                      className="has-text-light"
-                      href={'mailto:' + data.email.work}
-                    >
-                      <u> {data.email.work}</u>
-                    </a>{' '}
+                    {data.email !== undefined &&
+                    data.email.work !== undefined ? (
+                      <>
+                        <a
+                          className="has-text-light"
+                          href={'mailto:' + data.email.work}
+                        >
+                          <u> {data.email.work}</u>
+                        </a>{' '}
+                      </>
+                    ) : (
+                      <></>
+                    )}
                   </li>
                 </ul>
               </div>
@@ -99,4 +105,4 @@ function Home({ data }) {
   )
 }
 
-export default Home
+export default Front

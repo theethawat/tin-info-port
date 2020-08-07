@@ -27,7 +27,7 @@ const Header = () => (
       aria-label="main navigation"
     >
       <div className="navbar-brand">
-        <a className="navbar-item" href="/">
+        <a className="navbar-item">
           <h1 className="kanitlight title is-4 has-text-white">
             TheethawatSpace*
           </h1>
@@ -48,7 +48,7 @@ const Header = () => (
 
       <div id="navbarBasicExample" className="navbar-menu">
         <div className="navbar-start">
-          <a href="/" className="navbar-item">
+          <a href="#" className="navbar-item">
             Home
           </a>
 

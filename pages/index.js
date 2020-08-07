@@ -1,15 +1,15 @@
 import Header from '../components/Header'
-import Home from './home'
+import Front from './front'
 import Project from './project'
 import Skill from './skill'
 import Footer from '../components/Footer'
 import config from './config.json'
 
-function Index({ personalData, projectData, skillData }) {
+function Home({ personalData, projectData, skillData }) {
   return (
     <div>
       <Header />
-      <Home data={personalData} />
+      <Front data={personalData} />
       <Skill data={skillData} />
       <Project projectData={projectData} />
 
@@ -33,4 +33,4 @@ export async function getServerSideProps() {
     },
   }
 }
-export default Index
+export default Home
