@@ -1,13 +1,13 @@
-import Link from "next/link"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faHeart, faEnvelope } from "@fortawesome/free-solid-svg-icons"
+import Link from 'next/link'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faHeart, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import {
   faGithub,
   faFacebook,
   faInstagram,
   faLinkedin,
   faMedium,
-} from "@fortawesome/free-brands-svg-icons"
+} from '@fortawesome/free-brands-svg-icons'
 
 function Footer({ data }) {
   return (
@@ -20,7 +20,7 @@ function Footer({ data }) {
             className="has-text-dark"
             title="Facebook"
           >
-            {" "}
+            {' '}
             <FontAwesomeIcon icon={faFacebook} />
           </a>
 
@@ -30,7 +30,7 @@ function Footer({ data }) {
             className="has-text-dark"
             title="Instagram"
           >
-            {" "}
+            {' '}
             <FontAwesomeIcon icon={faInstagram} />
           </a>
 
@@ -40,7 +40,7 @@ function Footer({ data }) {
             className="has-text-dark"
             title="GitHub"
           >
-            {" "}
+            {' '}
             <FontAwesomeIcon icon={faGithub} />
           </a>
 
@@ -50,7 +50,7 @@ function Footer({ data }) {
             className="has-text-dark"
             title="LinkedIn"
           >
-            {" "}
+            {' '}
             <FontAwesomeIcon icon={faLinkedin} />
           </a>
 
@@ -60,25 +60,25 @@ function Footer({ data }) {
             className="has-text-dark"
             title="Medium"
           >
-            {" "}
+            {' '}
             <FontAwesomeIcon icon={faMedium} />
           </a>
 
           <a
-            href={"mailto:theethawat.s@outlook.co.th"}
+            href={'mailto:theethawat.s@outlook.co.th'}
             target="_blank"
             className="has-text-dark"
             title="Email"
           >
-            {" "}
+            {' '}
             <FontAwesomeIcon icon={faEnvelope} />
           </a>
         </h4>
         <p>
           Copyright &copy; 2020 Theethawat Savastham All Right Reserved <br />
-          Create with <FontAwesomeIcon icon={faHeart} /> using{" "}
-          <a href="https://nextjs.org">NextJS</a> which get useful function of{" "}
-          <a href="https://reactjs.org"> React</a> Proundly hosted on{" "}
+          Create with <FontAwesomeIcon icon={faHeart} /> using{' '}
+          <a href="https://nextjs.org">NextJS</a> which get useful function of{' '}
+          <a href="https://reactjs.org"> React</a> Proundly hosted on{' '}
           <a href="https://vercel.com/">Vercel</a>
         </p>
       </footer>
