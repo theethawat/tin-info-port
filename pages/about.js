@@ -1,11 +1,6 @@
-import Router from "next/router"
-import Header from "../components/Header"
-import Footer from "../components/Footer"
-
 function About({ data }) {
   return (
     <div>
-      <Header />
       <section className="section">
         <div className="container">
           <h3 className="title is-3">Personal Info and Biography</h3>
@@ -21,7 +16,7 @@ function About({ data }) {
               <div className="content">
                 <ul>
                   <li>
-                    Name - {data.name} {data.surname} ({data.nickname}){" "}
+                    Name - {data.name} {data.surname} ({data.nickname}){' '}
                   </li>
                   <li>Hometown - {data.hometowm}, Thailand </li>
                   <li>Birthday - {data.birthday} </li>
@@ -33,8 +28,8 @@ function About({ data }) {
                     </ul>
                   </li>
                   <li>
-                    Email -{" "}
-                    <a href={"mailto:" + data.email.work}>{data.email.work}</a>{" "}
+                    Email -{' '}
+                    <a href={'mailto:' + data.email.work}>{data.email.work}</a>{' '}
                   </li>
                 </ul>
               </div>
@@ -47,21 +42,8 @@ function About({ data }) {
           </div>
         </div>
       </section>
-      <Footer />
     </div>
   )
-}
-export async function getStaticProps() {
-  const res = await fetch(
-    "https://theethawat-api.azurewebsites.net/personal-data/"
-  )
-  const data = await res.json()
-
-  return {
-    props: {
-      data,
-    },
-  }
 }
 
 export default About

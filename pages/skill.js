@@ -1,52 +1,40 @@
-import Router from "next/router"
-import Header from "../components/Header"
-import Footer from "../components/Footer"
 function Skill({ data }) {
   return (
     <div>
-      <Header />
-
-      <section className="section">
+      <section className="section" id="skill">
         <div className="container">
-          <h3 className="title is-3">Skill</h3>
-          <div className="content column is-7">
-            <ul>
-              {data.map((skill) => (
-                <li>
-                  {" "}
-                  {skill.name} <br />
-                  <progress
-                    className="progress is-primary"
-                    value={skill.skillPercent}
-                    max="100"
-                  >
-                    {" "}
-                    {skill.skillPercent} %{" "}
-                  </progress>
-                </li>
-              ))}
-            </ul>
+          <div className="columns acenter">
+            <div className="content column is-6">
+              <div>
+                <h3 className="title is-3 ">Skill</h3>
+                {data.map((skill) => (
+                  <div className="column is-9 piccenter">
+                    {' '}
+                    {skill.name} <br />
+                    <progress
+                      className="progress is-primary"
+                      value={skill.skillPercent}
+                      max="100"
+                    >
+                      {' '}
+                      {skill.skillPercent} %{' '}
+                    </progress>
+                  </div>
+                ))}
+              </div>{' '}
+            </div>
+            <div className="column is-5">
+              <h3 className="title is-3">Online Badge</h3>
+              <p>Nothing to show now.</p>
+              <br />
+              <h3 className="title is-3">Certificate</h3>
+              <p>Nothing to show now.</p>
+            </div>
           </div>
-          <h3 className="title is-3">Online Badge</h3>
-          <p>Nothing to show now.</p>
-          <br />
-          <h3 className="title is-3">Certificate</h3>
-          <p>Nothing to show now.</p>
         </div>
       </section>
-      <Footer />
     </div>
   )
-}
-
-export async function getStaticProps() {
-  const res = await fetch("https://theethawat-api.azurewebsites.net/skill/")
-  const data = await res.json()
-  return {
-    props: {
-      data,
-    },
-  }
 }
 
 export default Skill

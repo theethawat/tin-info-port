@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Maitree&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&display=swap');
 body {
-  font-family: "maitree", serif;
+  font-family: 'Fira Code', monospace;
 }
 .acenter {
   text-align: center;
@@ -12,15 +12,14 @@ body {
   margin-right: auto;
 }
 .kanitlight {
-  font-family: "kanit", sans-serif;
+  font-family: 'kanit', sans-serif;
   font-weight: 300;
 }
-.maitree {
-  font-family: "maitree", serif;
-}
+
 .video-player {
   max-width: 700px;
   display: block;
+  padding-top: 2em;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 1em;
@@ -42,5 +41,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   height: inherit;
+  padding-bottom: 5%;
   width: 100%;
 }

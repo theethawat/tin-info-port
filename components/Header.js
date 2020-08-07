@@ -1,9 +1,9 @@
-import Link from "next/link"
-import Head from "next/head"
+import Link from 'next/link'
+import Head from 'next/head'
 const Header = () => (
   <div>
     <Head>
-      <title>TheethawatSpace*</title>
+      <title>TheethawatSpace* - Theethawat Savastham Personal Site</title>
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       <meta http-equiv="Content–Type" content="text/html ; charset= utf–8" />
       <meta
@@ -52,11 +52,11 @@ const Header = () => (
             Home
           </a>
 
-          <a href="/skill" className="navbar-item">
+          <a href="#skill" className="navbar-item">
             Skill & Cert
           </a>
 
-          <a href="/project" className="navbar-item">
+          <a href="#project" className="navbar-item">
             Project
           </a>
         </div>

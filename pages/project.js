@@ -1,54 +1,52 @@
-import Router from "next/router"
-import Header from "../components/Header"
-import Footer from "../components/Footer"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import _ from "lodash"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import _ from 'lodash'
 
 import {
   faCode,
   faCodeBranch,
   faGlobeAsia,
-} from "@fortawesome/free-solid-svg-icons"
+} from '@fortawesome/free-solid-svg-icons'
 
 let projectDataListing = (group, year) => (
-  <div className="content">
+  <div className="content column is-8 piccenter">
     <h4 className="title is-5"> {year} </h4>
     <ul>
       {group[year].map((project) => (
-        <li className="project-list">
+        <div className="project-list">
           {project.name} - {project.describe} <br />
           {project.stack.map((stack) => (
             <span>
-              <span className="tag is-light"> {stack.toUpperCase()} </span>{" "}
+              <span className="tag is-light"> {stack.toUpperCase()} </span>{' '}
             </span>
           ))}
-          {project.repository != "" ? (
+          {project.repository != '' ? (
             <span className="tag is-info is-light">
               <a href="${project.repository}">
                 <FontAwesomeIcon icon={faCodeBranch} /> Repository
               </a>
             </span>
           ) : (
-            ""
+            ''
           )}
-          {"  "}
-          {project.website != "" ? (
+          {'  '}
+          {project.website != '' ? (
             <span className="tag is-success is-light">
               <a href={project.website} className="has-text-success">
                 <FontAwesomeIcon icon={faGlobeAsia} /> Deploy Site
               </a>
             </span>
           ) : (
-            ""
+            ''
           )}
-        </li>
+        </div>
       ))}
     </ul>
+    <hr />
   </div>
 )
 
 function project({ projectData }) {
-  let group = _.groupBy(projectData, "year")
+  let group = _.groupBy(projectData, 'year')
   let currentDate = new Date()
   let currentYear = currentDate.getFullYear()
   let allProjectList = []
@@ -58,29 +56,14 @@ function project({ projectData }) {
   }
   return (
     <div>
-      <Header />
-
-      <section className="section">
-        <div className="container">
-          <h3 className="title is-3">Project</h3>
+      <section className="section" id="project">
+        <div className="container acenter content is-medium">
+          <h3 className="title is-3 ">Project</h3>
           {allProjectList}
         </div>
       </section>
-      <Footer />
     </div>
   )
 }
 
-export async function getStaticProps() {
-  const project = await fetch(
-    "https://theethawat-api.azurewebsites.net/project/"
-  )
-  const projectData = await project.json()
-
-  return {
-    props: {
-      projectData,
-    },
-  }
-}
 export default project
