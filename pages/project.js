@@ -46,8 +46,7 @@ let projectDataListing = (group, year) => (
   </div>
 )
 
-function project(input) {
-  let projectData = input.projectData
+function project(projectData) {
   let group = _.groupBy(projectData, 'year')
   let currentDate = new Date()
   let currentYear = currentDate.getFullYear()

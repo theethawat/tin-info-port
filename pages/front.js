@@ -1,8 +1,6 @@
 import Plyr from 'react-plyr'
 
-function Front(input) {
-  let data = input.data
-  console.log(data)
+function Front(data) {
   return (
     <div>
       <div className="title-hero hero is-medium">

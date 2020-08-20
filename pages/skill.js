@@ -1,5 +1,4 @@
-function Skill(input) {
-  let data = input.data
+function Skill(data) {
   if (data)
     return (
       <div>
