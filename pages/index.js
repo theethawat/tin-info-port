@@ -18,7 +18,7 @@ function Home({ personalData, projectData, skillData }) {
   )
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const personalDataRes = await fetch(config['api-url'] + '/personal-data/')
   const projectDataRes = await fetch(config['api-url'] + '/project/')
   const skillDataRes = await fetch(config['api-url'] + '/skill/')
