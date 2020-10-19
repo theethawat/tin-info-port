@@ -47,7 +47,16 @@ function Front({ data }) {
                       position :
                       <ul className='has-text-light'>
                         <li>Computer Engineering Student</li>
-                        <li> Full Stack Jounior Developer</li>
+                        <li>
+                          {' '}
+                          Full Stack Jounior Developer @{' '}
+                          <a
+                            href='https://iarc.psu.ac.th'
+                            className='has-text-light'
+                          >
+                            IARC
+                          </a>
+                        </li>
                       </ul>
                     </li>
                     <li>

@@ -5,6 +5,8 @@ import {
   faCode,
   faCodeBranch,
   faGlobeAsia,
+  faInfo,
+  faInfoCircle,
 } from '@fortawesome/free-solid-svg-icons'
 
 let projectDataListing = (group, year) => (
@@ -34,6 +36,16 @@ let projectDataListing = (group, year) => (
               <span className='tag is-success is-light'>
                 <a href={project.website} className='has-text-success'>
                   <FontAwesomeIcon icon={faGlobeAsia} /> Deploy Site
+                </a>
+              </span>
+            ) : (
+              ''
+            )}
+            {'  '}
+            {project.storySite != '' ? (
+              <span className='tag is-danger is-light'>
+                <a href={project.storySite} className='has-text-danger'>
+                  <FontAwesomeIcon icon={faInfoCircle} /> About
                 </a>
               </span>
             ) : (
