@@ -1,4 +1,4 @@
-import Plyr from 'react-plyr'
+import Plyr from "react-plyr";
 
 function Front({ data }) {
   if (data)
@@ -6,12 +6,9 @@ function Front({ data }) {
       <div>
         <div className='title-hero hero is-medium'>
           <div className='hero-body'>
-            <h1 className='title is-2 kanitlight has-text-white acenter py-4'>
-              {'<'} TheethawatSpace* {'/>'}
-            </h1>
-            <h3 className='subtitle is-3 acenter has-text-light is-italic'>
+            <h3 className='subtitle is-3 acenter  has-text-light is-italic'>
               /*<span className='has-text-primary'> @TheethawatSpace </span>is
-              space of{' '}
+              space of{" "}
               <span className='kanitlight'>ธีร์ธวัช สวาสดิ์ธรรม */</span>
             </h3>
           </div>
@@ -36,23 +33,23 @@ function Front({ data }) {
               <div className='column'>
                 <div className='content has-text-warning'>
                   <ul>
-                    <h5 className='subtitle is-3 has-text-light kanitlight'>
+                    <h5 className='subtitle is-3  has-text-black kanitlight'>
                       {data.name} {data.surname} ({data.nickname}) <br />
-                      <span className='subtitle is-5 has-text-white'>
-                        {data.thaiName} {data.thaiSurname} ({data.thaiNickname}){' '}
+                      <span className='subtitle is-5 '>
+                        {data.thaiName} {data.thaiSurname} ({data.thaiNickname}){" "}
                       </span>
                     </h5>
                     <h6 className='has-text-danger'>$ cat biography.yaml</h6>
                     <li>
                       position :
-                      <ul className='has-text-light'>
+                      <ul className=' has-text-black'>
                         <li>Computer Engineering Student</li>
                         <li>
-                          {' '}
-                          Full Stack Jounior Developer @{' '}
+                          {" "}
+                          Full Stack Jounior Developer @{" "}
                           <a
                             href='https://iarc.psu.ac.th'
-                            className='has-text-light'
+                            className=' has-text-black'
                           >
                             IARC
                           </a>
@@ -61,33 +58,33 @@ function Front({ data }) {
                     </li>
                     <li>
                       hometown :
-                      <span className='has-text-light'>
-                        {' '}
+                      <span className=' has-text-black'>
+                        {" "}
                         {data.hometowm}, Thailand
-                      </span>{' '}
+                      </span>{" "}
                     </li>
                     <li>
-                      birthday :{' '}
-                      <span className='has-text-light'> {data.birthday}</span>{' '}
+                      birthday :{" "}
+                      <span className=' has-text-black'> {data.birthday}</span>{" "}
                     </li>
                     <li>
                       schools :
-                      <ul className='has-text-light'>
+                      <ul className=' has-text-black'>
                         {Array.isArray(data.school) &&
                           data.school.map((_school) => <li>{_school}</li>)}
                       </ul>
                     </li>
                     <li>
-                      email :{' '}
+                      email :{" "}
                       {data.email !== undefined &&
                       data.email.work !== undefined ? (
                         <>
                           <a
-                            className='has-text-light'
-                            href={'mailto:' + data.email.work}
+                            className=' has-text-black'
+                            href={"mailto:" + data.email.work}
                           >
                             <u> {data.email.work}</u>
-                          </a>{' '}
+                          </a>{" "}
                         </>
                       ) : (
                         <></>
@@ -113,10 +110,10 @@ function Front({ data }) {
           </div>
         </section>
       </div>
-    )
+    );
   else {
-    return <div></div>
+    return <div></div>;
   }
 }
 
-export default Front
+export default Front;

@@ -1,3 +1,241 @@
 {
-  "api-url": "http://dev.theduckcreator.in.th/api"
+  "pageProps": {
+    "personalData": {
+      "_id": "5ec0166edb1a135770b9c090",
+      "name": "Theethawat",
+      "surname": "Savastham",
+      "thaiName": "ธีร์ธวัช",
+      "thaiSurname": "สวาสดิ์ธรรม",
+      "nickname": "Tin",
+      "thaiNickname": "ติน",
+      "birthday": "7 Febuary 1998",
+      "hometowm": "Yala / Songkhla",
+      "email": {
+        "personal": "theethawat.s@outlook.co.th",
+        "work": "theethawat.s@outlook.co.th",
+        "university": "5910110150@email.psu.ac.th"
+      },
+      "website": {
+        "personal": "https://theethawat.github.io",
+        "developing": "https://theduckcreator.in.th",
+        "work": ""
+      },
+      "socialMedia": {
+        "facebook": "https://facebook.com/tin.savastham",
+        "instagram": "https://instagram.com/tin_savastham",
+        "linkedin": "https://www.linkedin.com/in/theethawat-savastham-bb8493124/",
+        "github": "https://github.com/theethawat"
+      },
+      "school": [
+        "Mahavajiravudh School (Grade 7-8)",
+        "Benjamarachutit School Nakhonsithammarat (Grade 9 -12)",
+        "Faculty of Engineering , Prince of Songkla Univesity (Since 2017)"
+      ],
+      "introduction": "Hello, my name is Theethawat Savastham, 22 years old Computer Engineering Student from Prince of Songkla University Hatyai Songkhla Thailand. I have just coded basic C before but I come to the working coding world since 2017. I had try to code a lot of program with C,Javascript, and PHP. In 2019 I had learned a new skill about OOP in Java, Kotlin and taking intermeiate on JavaScript like Frontend Programing with React, Firebase and API providing with Express. Furthermore I had learned coding Android application by using Kotlin , Android MVVM and the new fancy of writing Android app to fullfilling my senoir graduation project.",
+      "thaiIntro": "สวัสดีครับ ผมชื่อธีร์ธวัช สวาสดิ์ธรรม อายุ 22 ปี เป็นนักศึกษาวิศวกรรมคอมพิวเตอร์ ที่คณะวิศวกรรมศาสตร์ มหาวิทยาลัยสงขลานครินทร์วิทยาเขตหาดใหญ่ จริง ๆ ผมก็เคยเขียนโค้ด C มาก่อนนะ ท้ั้ง C ปกติ และ AVR แต่ผมเข้าสู่โลกของการโค้ดดิ้งจริง ๆ ในปี 2560 ครับ ผมได้เรียนเทคนิค การวางความคิดต่าง ๆ ของภาษา C Javascript และ PHP ต่อมาในปี 2562 ผมก็ได้สกิลด้าน OOP ขึ้นมาจากการเรียนภาษา Java ภาษา Kotlin และ ขั้นที่สูงขึ้นมาของ JavaScript อย่างเช่นการเขียน Frontend ด้วย React, การเข้าถึง Firebase, การเข้าถึง API และการสร้างมันด้วย Express นอกจากนั้นแล้วผมยังได้เรียนการเขียนแอพพลิเคชั่นบนแอนดรอยด์ ด้วยภาษา Kotlin การเขียน Android ด้วยหลัก MVVM เพื่อที่จะเติมเต็มในโปรเจกต์จบของผมครับ"
+    },
+    "projectData": [
+      {
+        "_id": "5ec0e6791609c11304ba234c",
+        "year": 2016,
+        "name": "Culture writing in Big Asia Site ",
+        "describe": " Culture program of my grade 12, I founded since 2016 but it was stop on middle of 2018. I had learn about hosting and wordpress with this.",
+        "stack": ["php", "wordpress", "hosting"],
+        "website": "",
+        "storySite": "",
+        "repository": ""
+      },
+      {
+        "_id": "5ec0e77b1609c11304ba2357",
+        "year": 2020,
+        "name": "Azure Infrastructure Demo",
+        "describe": "Demonstration virtual machine and cloud infrastructure on Microsoft Azurev for provide application",
+        "stack": ["azure", "nginx", "ubuntu", "node.js", "mongodb", "docker"],
+        "website": "https://cloud.theduckcreator.in.th",
+        "storySite": "",
+        "repository": ""
+      },
+      {
+        "_id": "5ec0e77b1609c11304ba234f",
+        "year": 2018,
+        "name": " QR Code Congratulation Project",
+        "describe": " make on PHP with Laravel to map a good wish with a random number",
+        "stack": ["php", "laravel"],
+        "website": "",
+        "storySite": "",
+        "repository": "https://github.com/theethawat/shopcongrat18"
+      },
+      {
+        "_id": "5ec0e77b1609c11304ba2354",
+        "year": 2019,
+        "name": "You're flower/ Memory of Hatyai",
+        "describe": " Congratulation project for graduated student of Eng-PSU in September 2019, using code to search a good wish item. Write on Javascript, React and Firebase Realtime DB. That is the new programing language era for me.",
+        "stack": [
+          "javascript",
+          "react",
+          "firebase",
+          "realtime database",
+          "github page"
+        ],
+        "website": "https://theduckcreator.in.th/memoriesofhatyai",
+        "storySite": "",
+        "repository": "https://github.com/TheDuckCreator/memoriesofhatyai"
+      },
+      {
+        "_id": "5ec0e77b1609c11304ba234d",
+        "year": 2017,
+        "name": " Big Asia and Thailand Blog hub",
+        "describe": " PHP Programing for Big Asia and Thailand Blog hub Web Application and Fail",
+        "stack": ["php", "hosting"],
+        "website": "",
+        "storySite": "",
+        "repository": ""
+      },
+      {
+        "_id": "5ec0e77b1609c11304ba2355",
+        "year": 2019,
+        "name": "Ehealth For Personal Sensor Application",
+        "describe": " Android, Reactive X and Cloud Firestore application with Kotlin as my senior graduation project.",
+        "stack": [
+          "android",
+          "kotlin",
+          "reactivex",
+          "firebase",
+          "cloud firestore"
+        ],
+        "website": "https://cnr-ehealth.page",
+        "storySite": "https://www.theduckcreator.in.th/it-blog/2020/06/05/senior-project-talk.html",
+        "repository": ""
+      },
+      {
+        "_id": "5ec0e77b1609c11304ba2352",
+        "year": 2019,
+        "name": "Offline Bike Event Registration ",
+        "describe": "Develop Offline Bike Event Registration and Water Monitoring Page - during internship on June 2019, co working with my collegue.",
+        "stack": [
+          "php",
+          "laravel",
+          "chart.js",
+          "windows server 2016",
+          "windows server 2003"
+        ],
+        "website": "",
+        "storySite": "",
+        "repository": ""
+      },
+      {
+        "_id": "5ec0e77b1609c11304ba2351",
+        "year": 2019,
+        "name": "The Duck Creator Website ",
+        "describe": "Create my personal site using Jekyll Static Site Generater",
+        "stack": ["jekyll", "gem", "github page"],
+        "website": "https://theduckcreator.in.th",
+        "storySite": "",
+        "repository": "https://github.com/TheDuckCreator/theduckcreator.github.io"
+      },
+      {
+        "_id": "5ec0e77b1609c11304ba2356",
+        "year": 2020,
+        "name": "PHR-Dashboard",
+        "describe": "Online Dashboard For E-health for Personal Sensor Application senior project",
+        "stack": ["react", "typescript", "firebase", "cloud firestore"],
+        "website": "https://cnr-ehealth.page/dashboard",
+        "storySite": "",
+        "repository": "https://github.com/theethawat/phr-dashboard"
+      },
+      {
+        "_id": "5ec0e77b1609c11304ba2353",
+        "year": 2019,
+        "name": "TheDuckCreator Development Server",
+        "describe": "Create Linux Virtual Machine for demonstration web server,firewall and program environment on Digital Ocean Droplet",
+        "stack": [
+          "javascript",
+          "bash",
+          "linux",
+          "nginx",
+          "ubuntu",
+          "node.js",
+          "apache2",
+          "docker",
+          "digitalocean"
+        ],
+        "website": "https://dev.theduckcreator.in.th/",
+        "storySite": "",
+        "repository": ""
+      },
+      {
+        "_id": "5ec0e77b1609c11304ba2350",
+        "year": 2018,
+        "name": " Join Windows Insider Program ",
+        "describe": " Join Windows Insider Program to try a beta release version of Microsoft Windows on fast ring",
+        "stack": [],
+        "website": "",
+        "storySite": "",
+        "repository": ""
+      },
+      {
+        "_id": "5ec0e77b1609c11304ba234e",
+        "year": 2018,
+        "name": " Thaileague Unofficial Web Application",
+        "describe": "PHP with Laravel programing about football program system and Fail again but it make a lot of programing techniques.",
+        "stack": ["php", "laravel"],
+        "website": "",
+        "storySite": "https://www.theduckcreator.in.th/work/2019/06/28/thaileagueapp.html",
+        "repository": "https://github.com/TheDuckCreator/thaileague-app"
+      },
+      {
+        "_id": "5f8dc41842d63a03109f7f50",
+        "year": 2020,
+        "name": "E-Onlineshop Co-Developer",
+        "describe": "React + Express App Based, Design Scalable Online Shop Platform for Support Local Products Online Marketing",
+        "stack": ["React", "Express", "PUG", "node.js", "mongodb", "docker"],
+        "website": "https://eonlineshop.net",
+        "storySite": "",
+        "repository": ""
+      },
+      {
+        "_id": "5f8dc5a542d63a03109f7f51",
+        "year": 2020,
+        "name": "E-Accom Co-Developer",
+        "describe": "React Express and GraphQL Accommodation Reservation System ",
+        "stack": ["React", "Express", "GraphQL", "node.js", "mongodb"],
+        "website": "https://eaccom.net",
+        "storySite": "",
+        "repository": ""
+      }
+    ],
+    "skillData": [
+      {
+        "_id": "5ec0e9bf1609c11304ba2364",
+        "name": "DevOps",
+        "skillPercent": 32,
+        "description": ""
+      },
+      {
+        "_id": "5ec0e9bf1609c11304ba2363",
+        "name": "Network Configuration",
+        "skillPercent": 25,
+        "description": ""
+      },
+      {
+        "_id": "5ec0e9bf1609c11304ba2361",
+        "name": "Node.js",
+        "skillPercent": 40,
+        "description": ""
+      },
+      {
+        "_id": "5ec0e9bf1609c11304ba2360",
+        "name": "Android",
+        "skillPercent": 35,
+        "description": ""
+      },
+      {
+        "_id": "5ec0e9bf1609c11304ba2362",
+        "name": "React",
+        "skillPercent": 47,
+        "description": ""
+      }
+    ]
+  },
+  "__N_SSG": true
 }
